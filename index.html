@@ -4,39 +4,43 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>FCC SURVEY FORM</title>
+
+	<link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
-	<h1 id="title">Titolo del Form</h1>
-	<p id="description">Form's short description</p>
-	<form id="survey-form">
-		<label id="name-label" for="name">Name</label>
-		<input id="name" type="text" placeholder="your name" required>
+	<main>
+		<h1 id="title">Titolo del Form</h1>
+		<p id="description">Form's short description</p>
+		<form id="survey-form">
+			<label id="name-label" for="name">Name</label>
+			<input id="name" type="text" placeholder="your name" required>
 
-		<label id="email-label" for="email">Email</label>
-		<input id="email" type="email" placeholder="your email" required>
+			<label id="email-label" for="email">Email</label>
+			<input id="email" type="email" placeholder="your email" required>
 
-		<label id="number-label" for="number">Number</label>
-		<input id="number" type="number" placeholder="your email" min="2" max="10">
+			<label id="number-label" for="number">Number</label>
+			<input id="number" type="number" placeholder="00" min="2" max="10">
 
-		<select id="dropdown">
-			<option>First choice</option>
-			<option>Second choice</option>
-			<option>Third choice</option>
-		</select>
+			<select id="dropdown">
+				<option>First choice</option>
+				<option>Second choice</option>
+				<option>Third choice</option>
+			</select>
 
-		<input type="radio" name="radio-type" value="First radio"> First radio
-		<input type="radio" name="radio-type" value="Second radio"> Second radio
-		<input type="radio" name="radio-type" value="Third radio"> Third radio
+			<input type="radio" name="radio-type" value="First radio"> First radio
+			<input type="radio" name="radio-type" value="Second radio"> Second radio
+			<input type="radio" name="radio-type" value="Third radio"> Third radio
 
-		<input type="checkbox" name="checkbox-type" value="First checkbox"> First checkbox
-		<input type="checkbox" name="checkbox-type" value="Second checkbox"> Second checkbox
-		<input type="checkbox" name="checkbox-type" value="Third checkbox"> Third checkbox
+			<input type="checkbox" name="checkbox-type" value="First checkbox"> First checkbox
+			<input type="checkbox" name="checkbox-type" value="Second checkbox"> Second checkbox
+			<input type="checkbox" name="checkbox-type" value="Third checkbox"> Third checkbox
 
-		<textarea placeholder="write here more info..."></textarea>
+			<textarea placeholder="write here more info..."></textarea>
 
-		<button id="submit" type="submit">Submit form</button>
-	</form>	
+			<button id="submit" type="submit">Submit form</button>
+		</form>	
+	</main>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
