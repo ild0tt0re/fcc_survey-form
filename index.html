@@ -9,15 +9,17 @@
 </head>
 
 <body>
-	<main>
+	<header>
 		<h1 id="title">Titolo del Form</h1>
+	</header>
+	<main>
 		<p id="description">Form's short description</p>
 		<form id="survey-form">
 			<label id="name-label" for="name">Name</label>
-			<input id="name" type="text" placeholder="your name" required>
+			<input id="name" type="text" placeholder="Name" required>
 
 			<label id="email-label" for="email">Email</label>
-			<input id="email" type="email" placeholder="your email" required>
+			<input id="email" type="email" placeholder="Email" required>
 
 			<label id="number-label" for="number">Number</label>
 			<input id="number" type="number" placeholder="00" min="2" max="10">
@@ -27,20 +29,30 @@
 				<option>Second choice</option>
 				<option>Third choice</option>
 			</select>
-
+			<label>
 			<input type="radio" name="radio-type" value="First radio"> First radio
+			</label>
+			<label>
 			<input type="radio" name="radio-type" value="Second radio"> Second radio
+			</label>
+			<label>
 			<input type="radio" name="radio-type" value="Third radio"> Third radio
-
+			</label>
+			<label>
 			<input type="checkbox" name="checkbox-type" value="First checkbox"> First checkbox
+			</label>
+			<label>
 			<input type="checkbox" name="checkbox-type" value="Second checkbox"> Second checkbox
+			</label>
+			<label>
 			<input type="checkbox" name="checkbox-type" value="Third checkbox"> Third checkbox
-
+			</label>
 			<textarea placeholder="write here more info..."></textarea>
 
 			<button id="submit" type="submit">Submit form</button>
 		</form>	
 	</main>
+	<footer>footer</footer>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
