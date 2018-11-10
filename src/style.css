@@ -2,6 +2,11 @@
 	margin: 0;
 }
 
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 header {
 	background-color: #f8f8f8;
 	height: 130px;
@@ -20,6 +25,34 @@ h1 {
 form {
 	display: flex;
 	flex-direction: column;
+}
+
+label {
+	color: rgba(0, 0, 0, 0.54);
+	padding: 0;
+	font-size: 0.7rem;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 10px;
+
+	transform-origin: top left;
+
+	transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+		transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+
+	transform: translate(0, 20px) scale(1);
+}
+
+.label-active {
+	color: #1976d2;
+	transform: translate(0, 1.5px) scale(0.75);
+	transform-origin: top left;
+}
+
+.form-elem {
+	position: relative;
 }
 
 input {
