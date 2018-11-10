@@ -15,15 +15,18 @@
 	<main>
 		<p id="description">Form's short description</p>
 		<form id="survey-form">
-			<label id="name-label" for="name">Name</label>
-			<input id="name" type="text" placeholder="Name" required>
-
+			<div class="form-elem">
+				<label id="name-label" for="name">Name</label>
+			<input id="name" type="text" required>
+			</div>
+			<div class="form-elem">
 			<label id="email-label" for="email">Email</label>
-			<input id="email" type="email" placeholder="Email" required>
-
+			<input id="email" type="email" required>
+			</div>
+			<div class="form-elem">
 			<label id="number-label" for="number">Number</label>
-			<input id="number" type="number" placeholder="00" min="2" max="10">
-
+			<input id="number" type="number" min="2" max="10">
+			</div>
 			<select id="dropdown">
 				<option>First choice</option>
 				<option>Second choice</option>
@@ -53,7 +56,7 @@
 		</form>	
 	</main>
 	<footer>footer</footer>
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
 </html>
