@@ -94,6 +94,26 @@ input:focus {
 	background: linear-gradient(180deg, #11e6d9 0%, #07c8b1 100%);
 }
 
+.card.ide .card__image {
+	background: linear-gradient(180deg, #88e6f3 0%, #50c8e3 100%);
+}
+
+.card.open-source .card__image {
+	background: linear-gradient(180deg, #fad961 0%, #f76b1c 100%);
+}
+
+.card.profile .card__image {
+	background: linear-gradient(127.05deg, #3023AE 0%, #C86DD7 101.5%);
+}
+
+.card__image figcaption {
+	padding: 25px 20px 10px;
+}
+
+.card__image figcaption .description {
+	font-family: cursive;
+}
+
 .card__text {
 	position: relative;
 	width: 68%;
@@ -102,27 +122,28 @@ input:focus {
 
 .card__header,
 .card__user-input {
-	padding: 20px 30px;
+	padding: 26px 30px 10px;
 }
 
 .step-number {
 	position: absolute;
 	background-color: #4a4a4a;
 	color: white;
-	border: 3px solid white;
+	border: 6px solid white;
 	border-radius: 100%;
 	padding: 5px;
-	font-size: 1.5em;
-	width: 26px;
-	height: 26px;
-	top: 11px;
-	left: -22px;
+	font-size: 1.3em;
+	width: 30px;
+	height: 30px;
+	top: 17px;
+	left: -29px;
 }
 
 .step-number span {
 	display: block;
 	font-size: 0.9em;
-	margin: -3px 5px 0;
+	margin: -3px 8px 0;
+	font-family: initial;
 }
 
 figure {
@@ -136,6 +157,7 @@ figcaption {
 
 figcaption .title {
 	font-weight: bold;
+	font-family: fantasy;
 }
 
 /* TAB */
@@ -170,7 +192,8 @@ figcaption .title {
 	position: relative;
 }
 
-.tabs a { /*TO REMOVE*/
+.tabs a {
+	/*TO REMOVE*/
 	background-color: #eff0f2;
 	border-bottom: 1px solid #fff;
 	color: #888;
@@ -188,11 +211,11 @@ figcaption .title {
 
 .tabs_item {
 	display: none;
-	padding: 30px 0;
+	padding: 30px 10px;
 }
 
 .tabs_item:first-child {
 	display: block;
 }
 
-/*END TAB */
+/* // END TAB ~~~~~~~~~~~~~~~ (.)(.) */
