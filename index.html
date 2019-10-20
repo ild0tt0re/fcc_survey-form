@@ -104,7 +104,7 @@
 			</div>
 		</header>
 		<main>
-			<p id="description">Form's short description</p>
+			
 			<form id="survey-form">
 
 		  <!-- TABS -->
@@ -215,24 +215,25 @@
 											<legend>Personal Info</legend>
 											<div class="form-elem">
 												<label id="name-label" for="name">Name</label>
-												<input id="name" placeholder="Insert your name..." type="text" required />
+												<input id="name" name="name" placeholder="Insert your name..." type="text" required />
 											</div>
 											<div class="form-elem">
 												<label id="email-label" for="email">email</label>
-												<input id="email" placeholder="Insert your Email..." type="email" required />
+												<input id="email" name="email" placeholder="Insert your Email..." type="email" required />
 											</div>
 											<div class="form-elem">
 												<label id="number-label" for="number">Number</label>
 												<input
 													id="number"
-													placeholder="Insert your number"
+												  name="age"
+													placeholder="Insert your age..."
 													type="number"
-													min="2"
-													max="10"
+													min="1"
+													max="200"
 												/>
 											</div>
 										</fieldset>
-
+										
 							</div>
 						</div>
 					</section>
@@ -333,18 +334,18 @@
 								<div class="card__user-input">
 									
 									<label>
-										<input type="checkbox" name="checkbox-type" value="First checkbox" />
-										First checkbox
+										<input type="checkbox" name="checkbox-type" value="freeCodeCamp" />
+										  freeCodeCamp
 										<span class="checkmark"></span>
 									</label>
 									<label>
-										<input type="checkbox" name="checkbox-type" value="Second checkbox" />
-										Second checkbox
+										<input type="checkbox" name="checkbox-type" value="Coursera" />
+										  Coursera
 										<span class="checkmark"></span>
 									</label>
 									<label>
-										<input type="checkbox" name="checkbox-type" value="Third checkbox" />
-										Third checkbox
+										<input type="checkbox" name="checkbox-type" value="Udemy" />
+										  Udemy
 										<span class="checkmark"></span>
 									</label>
 
@@ -410,31 +411,31 @@
 										</svg>										
 
 									<figcaption>
-										<div class="title">IDE</div>
-										<p class="description">Seleziona il tuo IDE preferito.</p>
+										<div class="title">Tools</div>
+										<p class="description">My weapon.</p>
 									</figcaption>
 								</figure>
 							</div>
 							<div class="card__text">
 								<div class="card__header">
 									<div class="step-number"><span>3</span></div>
-									<p>Select platform you use to learn</p>
+									<p>Select your most used IDE</p>
 								</div>
 								<div class="card__user-input">
 
 									<label>
-										<input type="radio" name="radio-type" value="First radio" /> First
-										radio
+										<input type="radio" name="radio-type" value="VSCode" />
+									    VSCode
 										<span class="checkmark"></span>
 									</label>
 									<label>
-										<input type="radio" name="radio-type" value="Second radio" /> Second
-										radio
+										<input type="radio" name="radio-type" value="WebStorm" />
+										  WebStorm
 										<span class="checkmark"></span>
 									</label>
 									<label>
-										<input type="radio" name="radio-type" value="Third radio" /> Third
-										radio
+										<input type="radio" name="radio-type" value="Sublime" />
+									    Sublime
 										<span class="checkmark"></span>
 									</label>
 
@@ -515,14 +516,16 @@
 							<div class="card__text">
 								<div class="card__header">
 									<div class="step-number"><span>4</span></div>
-									<p>Select platform you use to learn</p>
+									<p>Tell us something about yours collaboration.</p>
 								</div>
 								<div class="card__user-input">		
-									<textarea placeholder="write here more info..."></textarea>
+									<textarea placeholder="My open source collaboration..."></textarea>
 									<select id="dropdown">
-										<option>First choice</option>
-										<option>Second choice</option>
-										<option>Third choice</option>
+										<option selected>Select platform</option>
+										<option>Github</option>
+										<option>Bitbucket</option>
+										<option>Gitlab</option>
+										<option>Other...</option>
 									</select>
 									<div class="form-elem">
 					
@@ -537,8 +540,32 @@
 				</div> <!-- / tab_content -->
 			</div> <!-- / tab -->
 		</form>
-
+		
 		</main>
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Survey Guide</h2>
+    </div>
+    <div class="modal-body">
+      <p>Welcome to Developer Survey by "Angelo Annunziata"</p>
+			<p id="description">Form's short description</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+
 		<footer>footer</footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="./src/index.js"></script>
