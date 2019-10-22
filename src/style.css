@@ -10,7 +10,12 @@ body {
 }
 
 header {
-	background-image: linear-gradient( -74deg,#23afba 0%,#298dbf var(--hero-bg-gradient-x,50%),#306bc4 100% );
+	background-image: linear-gradient(
+		-74deg,
+		#23afba 0%,
+		#298dbf var(--hero-bg-gradient-x, 50%),
+		#306bc4 100%
+	);
 	text-align: center;
 	position: relative;
 	height: 416px;
@@ -18,6 +23,7 @@ header {
 
 #hero-header {
 	margin-left: 42px;
+	transform: rotate(0.5deg) translate(2px, 4px);
 }
 
 main {
@@ -86,8 +92,6 @@ fieldset {
 	box-shadow: 0 0 10px 0px #9e9e9e30;
 }
 
-
-
 #dropdown {
 	margin: 5px 0;
 }
@@ -103,7 +107,7 @@ fieldset {
 
 .card__image {
 	align-self: stretch;
-	width: 32%;
+	width: 40%;
 	background: linear-gradient(180deg, #11e6d9 0%, #07c8b1 100%);
 }
 
@@ -116,7 +120,7 @@ fieldset {
 }
 
 .card.profile .card__image {
-	background: linear-gradient(127.05deg, #3023AE 0%, #C86DD7 101.5%);
+	background: linear-gradient(127.05deg, #3023ae 0%, #c86dd7 101.5%);
 }
 
 .card__image figcaption {
@@ -135,7 +139,7 @@ fieldset {
 
 .card__header,
 .card__user-input {
-	padding: 26px 30px 10px;
+	padding: 26px 30px 20px;
 	display: flex;
 	flex-direction: column;
 }
@@ -184,7 +188,7 @@ figcaption .title {
 	position: absolute;
 	right: 318px;
 	bottom: 65px;
-	width: 50px; 
+	width: 50px;
 	height: 50px;
 	fill: #388d9d;
 }
@@ -195,7 +199,7 @@ figcaption .title {
 }
 
 textarea {
-  height: 70px;
+	height: 70px;
 }
 
 button {
@@ -204,7 +208,8 @@ button {
 }
 
 footer {
-	height: 50px;
+	padding: 10px;
+	text-align: center;
 	background-color: #f7f9fa;
 	margin-top: 40px;
 }
@@ -261,7 +266,7 @@ footer {
 	border-bottom: 2px solid var(--color);
 }
 
-.tabs .current a, 
+.tabs .current a,
 .tabs a:hover {
 	background-color: rgba(81, 77, 99, 0.8);
 }
@@ -278,7 +283,6 @@ footer {
 /* END TABS COMPONENT 
 ****/
 
-
 /***
  CUSTOM CHECKBOX/RADIO
  ***************/
@@ -286,39 +290,39 @@ footer {
 /* The container */
 .ide label,
 .skills label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .ide label input,
 .skills label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
 /* Create a custom checkbox */
 .ide .checkmark,
 .skills .checkmark {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  height: 25px;
-  width: 25px;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	height: 25px;
+	width: 25px;
 	background-color: #eee;
 }
-.skills .checkmark { 
+.skills .checkmark {
 	border-radius: 25%;
 }
 .ide .checkmark {
@@ -328,37 +332,37 @@ footer {
 /* On mouse-over, add a grey background color */
 .ide label:hover input ~ .checkmark,
 .skills label:hover input ~ .checkmark {
-  background-color: #ccc;
+	background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
 .ide label input:checked ~ .checkmark,
 .skills label input:checked ~ .checkmark {
-  background-color: #2196F3;
+	background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.ide .checkmark:after, 
+.ide .checkmark:after,
 .skills .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+	content: "";
+	position: absolute;
+	display: none;
 }
 
 /* Show the checkmark when checked */
 .ide input:checked ~ .checkmark:after,
 .skills input:checked ~ .checkmark:after {
-  display: block;
+	display: block;
 }
 
 /* Style the checkmark/indicator */
 .ide .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
 }
 .skills .checkmark:after {
 	top: 5px;
@@ -366,90 +370,138 @@ footer {
 	width: 5px;
 	height: 10px;
 	border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.skills .card__user-input,
+.ide .card__user-input {
+	flex-wrap: wrap;
+	height: 150px;
 }
 
 /* END CUSTOM CHECKBOX 
 ****/
 
-
 /***
- MODAL
+ MODAL INFO
  ***************/
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 0; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 80%;
+	max-width: 900px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	visibility: hidden;
+	opacity: 0;
+	top: -300px;
+	transition: all 0.4s ease-in;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+.modal-show {
+	top: 10vh;
+	opacity: 1;
+	visibility: visible;
 }
 
 /* The Close Button */
 .close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .modal-header {
-  padding: 10px 16px;
-  background-color: #43748c;
-  color: white;
+	padding: 10px 16px;
+	background-color: #43748c;
+	color: white;
 }
 
-.modal-body {padding: 32px 16px;}
+.modal-header h2 {
+	text-align: center;
+}
+
+.modal-body {
+	padding: 32px 46px;
+}
+.modal-body p {
+	margin: 20px;
+}
 
 .modal-footer {
 	font-size: 12px;
-  padding: 2px 16px;
-  background-color: #16262d;
-  color: white;
+	padding: 2px 16px;
+	background-color: #16262d;
+	color: white;
 }
 
-/* END Modal 
+.modal-footer {
+	text-align: right;
+}
+
+/* END Modal Info 
+****/
+
+/***
+ MODAL FORM VALIDITY
+ ***************/
+
+.modal-form-validity {
+	position: fixed;
+	bottom: -200px;
+	transition: all 0.5s ease-in-out;
+	color: white;
+	padding: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 400px;
+}
+
+.success,
+.error {
+	bottom: 0;
+}
+
+.success {
+	background: green;
+}
+
+.error {
+	background: red;
+	padding: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* END Modal Validity 
 ****/
