@@ -1,5 +1,5 @@
 # RESPONSIVE WEB DESIGN PROJECT | SURVEY FORM
-![Project-preview](image.png)
+![Project-preview](survey-form-preview.png)
 > This is the second project of _freeCodeCamp "RESPONSIVE WEB DESIGN" Certification_
 
 ## SUMMARY
