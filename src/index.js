@@ -1,12 +1,12 @@
-$(document).ready(function() {
-	(function($) {
+$(document).ready(function () {
+	(function ($) {
 		// Tabs script
 		$(".tab ul.tabs")
 			.addClass("active")
 			.find("> li:eq(0)")
 			.addClass("current");
 
-		$(".tab ul.tabs li a").click(function(g) {
+		$(".tab ul.tabs li a").click(function (g) {
 			var tab = $(this).closest(".tab"),
 				index = $(this)
 					.closest("li")
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		// END TABS SCRIPT
 
 		// KEYPRESS EVENT
-		document.addEventListener("keypress", function(e) {
+		document.addEventListener("keypress", function (e) {
 			console.log(e);
 			var tabsKey = ["1", "2", "3", "4"];
 			if (e.ctrlKey && tabsKey.includes(e.key)) {
@@ -58,17 +58,17 @@ $(document).ready(function() {
 		modal.style.display = "none";
 	}
 	// When the user clicks on the button, open the modal
-	btn.onclick = function() {
+	btn.onclick = function () {
 		modal.removeEventListener("transitionend", hideModalLayer);
 		modal.style.display = "block";
 		setTimeout(() => modalContent.classList.add("modal-show"), 0.1);
 	};
 	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
+	span.onclick = function () {
 		removeModal();
 	};
 	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
+	window.onclick = function (event) {
 		if (event.target == modal) {
 			removeModal();
 		}
@@ -87,7 +87,7 @@ $(document).ready(function() {
 	  SUBMIT BUTTON
 	 ----------------- */
 
-	document.querySelector("button").addEventListener("click", function(e) {
+	document.querySelector("button").addEventListener("click", function (e) {
 		e.preventDefault();
 		var invalidFields = document.querySelectorAll("input:invalid");
 		var modalFormValidity = document.getElementsByClassName(
@@ -99,14 +99,14 @@ $(document).ready(function() {
 				"SUCCESS: all fields have been validated.";
 			modalFormValidity.classList.add("success");
 		} else {
-			Array.from(invalidFields).forEach(function(invalidField) {
+			Array.from(invalidFields).forEach(function (invalidField) {
 				console.error("Field ", invalidField.name, " is invalid!");
 			});
 			modalFormValidity.textContent = "ERROR: Some fields are invalid...";
 			modalFormValidity.classList.add("error");
 		}
 
-		setTimeout(function() {
+		setTimeout(function () {
 			modalFormValidity.classList.remove("success", "error");
 		}, 3000);
 	});
