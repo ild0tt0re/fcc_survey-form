@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e24ef4a2-452a-41ed-86be-8363c776a294/deploy-status)](https://app.netlify.com/sites/fcc-rwdp-survey-form/deploys)
+
 # RESPONSIVE WEB DESIGN PROJECT | SURVEY FORM
 ![Project-preview](survey-form-preview.png)
 > This is the second project of _freeCodeCamp "RESPONSIVE WEB DESIGN" Certification_
